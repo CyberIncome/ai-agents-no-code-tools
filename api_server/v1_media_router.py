@@ -48,6 +48,7 @@ def transcribe(
     transcription = "".join([cap["text"] for cap in captions])
 
     return {
+        "words": captions,
         "transcription": transcription,
         "duration": duration,
     }
